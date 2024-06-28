@@ -1,5 +1,9 @@
 # **Plane Health Decission Tree Classifier**
 
+## **About**
+
+Module about decision tree classifiers made for high school students. In collaboration with Dendrobytes MPU4 and Syntech Organization UTP
+
 ## **Python Environment Configuration**
 
 1. Create a python environment
