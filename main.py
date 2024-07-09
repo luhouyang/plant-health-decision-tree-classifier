@@ -1,3 +1,8 @@
+#
+# load_iris implementation: https://github.com/scikit-learn/scikit-learn/blob/70fdc843a/sklearn/datasets/_base.py#L616
+# features, ..., target
+#
+
 #%%
 # import dependancies
 from sklearn.datasets import load_iris
