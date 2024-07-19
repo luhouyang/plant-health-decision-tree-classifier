@@ -107,4 +107,10 @@ graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
 graph.write_png('dev_plant.png')
 Image(graph.create_png())
 
+import m2cgen as m2c
+
+dart_code = m2c.export_to_dart(model=clf, indent=4, function_name='predictNutrientDeficiency')
+
+with open('dart_tree.dart', 'w') as f:
+    f.write(dart_code)
 #%%
