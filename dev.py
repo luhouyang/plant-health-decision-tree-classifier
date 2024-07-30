@@ -5,11 +5,11 @@
 
 #%%
 # import dependancies
-from sklearn.datasets import load_iris
+# from sklearn.datasets import load_iris
 from sklearn.tree import DecisionTreeClassifier
 from sklearn import metrics
 from IPython.display import display
-import numpy as np
+# import numpy as np
 
 # create decision tree classifier
 clf = DecisionTreeClassifier(random_state=0)
@@ -62,7 +62,7 @@ feature_names = [
 ]
 
 targets = pd.DataFrame([targets_mapping[x] for x in targets])
-display(targets.head(50))
+display(targets[5:7], targets[15:17], targets[70:72])
 
 # seperate data into train and test
 from sklearn.model_selection import train_test_split
