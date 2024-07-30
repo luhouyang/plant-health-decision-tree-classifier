@@ -74,6 +74,9 @@ y = targets
 train_data, test_data, train_labels, test_labels = train_test_split(
     X, y, test_size=0.2, random_state=42)
 
+train_data = X
+train_labels = y
+
 # check shape of train_data, test_data | (number of examples, number of features)
 print(f'Train Data Shape: {train_data.shape}')
 print(f'Test Data Shape: {test_data.shape}\n')
