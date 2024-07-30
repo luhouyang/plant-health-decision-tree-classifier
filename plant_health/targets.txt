@@ -1,0 +1,17 @@
+targets_mapping = {
+    "Nitrogen_Deficiency": 0,
+    "Nitrogen_Toxicity": 1,
+    "Water": 2,
+    "Phosphorus_Deficiency": 3,
+    "Potassium_Deficiency": 4,
+    "Magnesium_Deficiency": 5,
+    "Calcium_Deficiency": 6,
+    "Sulfur_Deficiency": 7,
+    "Iron_Deficiency": 8,
+    "Zinc_Deficiency": 9,
+    "Manganese_Deficiency": 10,
+    "Copper_Deficiency": 11,
+    "Boron_Deficiency": 12,
+    "Boron_Toxicity": 13,
+    "Molybdenum_Deficiency": 14,
+}

@@ -20,7 +20,8 @@ clf = DecisionTreeClassifier(random_state=0)
 # inspect data
 import pandas as pd
 # df = pd.DataFrame(iris.data, columns=iris.feature_names)
-df = pd.read_csv('plant_health/plant_health_train_csv.csv')
+# df = pd.read_csv('plant_health/plant_health_train_csv.csv')
+df = pd.read_csv('plant_health/plant_health_train_csv_extended.csv')
 
 print(f'Size of dataframe: {df.shape}\n')
 display(df.head())
@@ -104,13 +105,17 @@ export_graphviz(clf,
                 feature_names=feature_names,
                 class_names=class_names)
 graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
-graph.write_png('dev_plant.png')
+# graph.write_png('training_output/dev_plant.png')
+graph.write_png('training_output/dev_plant_ext.png')
 Image(graph.create_png())
 
 import m2cgen as m2c
 
 dart_code = m2c.export_to_dart(model=clf, indent=4, function_name='predictNutrientDeficiency')
 
-with open('dart_tree.dart', 'w') as f:
+# with open('dart_tree.dart', 'w') as f:
+#     f.write(dart_code)
+
+with open('dart_tree_extended.dart', 'w') as f:
     f.write(dart_code)
 #%%
