@@ -89,7 +89,7 @@ print(f'Test Labels Shape: {test_labels.shape}')
 clf.fit(train_data, train_labels)
 
 # accuracy after fitting
-print("Accuracy", metrics.accuracy_score(test_labels, clf.predict(test_data)))
+print("Accuracy:", metrics.accuracy_score(test_labels, clf.predict(test_data)))
 
 # show decision tree
 from sklearn.tree import export_graphviz
