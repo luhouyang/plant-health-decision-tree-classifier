@@ -33,7 +33,7 @@ clf.fit(X, y)
 
 
 # calculate each class in left and right nodes
-def class_dist(left_group, right_group):
+def calc_class_distribution(left_group, right_group):
     left_cls_dist = []
     right_cls_dist = []
 
@@ -117,7 +117,7 @@ for i in range(X.shape[1]):
 
         # append class ditribution of left and right node
         # example [50, 0, 0] | [0, 50, 50]
-        split_class_dist.append(class_dist(left_labels, right_labels))
+        split_class_dist.append(calc_class_distribution(left_labels, right_labels))
 
     # get 1D array of all gini values
     # get index of lowest gini values
