@@ -3,7 +3,8 @@
 # features, ..., target
 #
 
-#%%
+# remove 1 hash tag '#' to make it run like Jupyter Notebook
+##%%
 # import dependancies
 # from sklearn.datasets import load_iris
 from sklearn.tree import DecisionTreeClassifier
