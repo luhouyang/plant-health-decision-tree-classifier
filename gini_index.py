@@ -1,5 +1,5 @@
-# remove 1 hash tag '#' to make it run like Jupyter Notebook
-##%%
+# add '#%%' to make it run like Jupyter Notebook
+
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.datasets import load_iris
 
@@ -180,4 +180,3 @@ export_graphviz(clf,
                 class_names=class_name)
 graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
 Image(graph.create_png())
-##%%

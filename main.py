@@ -3,8 +3,8 @@
 # features, ..., target
 #
 
-# remove 1 hash tag '#' to make it run like Jupyter Notebook
-##%%
+# add '#%%' to make it run like Jupyter Notebook
+
 # import dependancies
 # from sklearn.datasets import load_iris
 from sklearn.tree import DecisionTreeClassifier
@@ -122,4 +122,3 @@ dart_code = m2c.export_to_dart(model=clf, indent=4, function_name='predictNutrie
 
 with open('dart_tree_extended.dart', 'w') as f:
     f.write(dart_code)
-##%%
